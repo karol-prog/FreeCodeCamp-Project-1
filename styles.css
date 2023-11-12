@@ -31,7 +31,7 @@ body {
 }
 
 .form-div{
-    display: flex;
+    display: flex; /*Do not need flex here*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -59,11 +59,17 @@ input[type="radio"], input[type="checkbox"] {
     width: 10px;
 }
 
-.form-radio, .form-checkbox {
+.form-radio,.form-checkbox {
     display: flex;
     flex-direction: column;
+    width: 90%; /*Aligned radio and checkbox form to much up the above radio and checkbox form*/
 }
 
+
+/*added centered to suggestion class*/
+.suggestions{
+    text-align: center;
+}
 
 textarea {
     width: 90%;
@@ -75,9 +81,12 @@ textarea {
     margin-bottom: 300px;
 }
 
+
 input[type="submit"] {
-    width: 200%;
+    width: auto; /*Changed from 200% to auto, the 200% did not look right*/
     color: white;
     background-color: green;
     border: 1px solid green;
+    margin-bottom: 10px; /*added margin at the bottom, to give it more space*/
+    cursor: pointer; /*add pointer cursor when you hover mouse over submit button*/
 }
